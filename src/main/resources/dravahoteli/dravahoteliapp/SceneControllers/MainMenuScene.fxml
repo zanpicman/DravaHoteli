@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="paneMainMenuView" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dravahoteli.dravahoteliapp.SceneControllers.MainMenuSceneController">
+   <top>
+      <GridPane style="-fx-background-color: #d6ccc2; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="566.7999755859375" minWidth="517.2" prefWidth="517.2" />
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="382.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="410.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <children>
+                  <Hyperlink minWidth="-Infinity" text="Novice" textFill="#2d3319">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Hyperlink>
+                  <Hyperlink minWidth="-Infinity" text="Super popusti" textFill="#2d3319">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Hyperlink>
+                  <Hyperlink minWidth="-Infinity" text="Moj račun" textFill="#2d3319">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Hyperlink>
+                  <Hyperlink minWidth="-Infinity" onAction="#switchToLoginScene" text="🚪 Odjava" textFill="#2d3319">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <Hyperlink text="🏠 DRAVA HOTELI" textFill="#d4a121">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Hyperlink>
+         </children>
+      </GridPane>
+   </top>
+   <center>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
+         <content>
+            <GridPane prefHeight="900.0" prefWidth="882.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="235.0" fitWidth="436.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@../images/mainmenuimage_1.jpg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="209.0" fitWidth="434.0" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/mainmenuimage_2.jpg" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="209.0" fitWidth="434.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../images/mainmenuimage_3.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="209.0" fitWidth="434.0" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../images/mainmenuimage_4.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: whitesmoke;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label minWidth="-Infinity" text="Ste že opravili rezervacijo? Preverite stanje.">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" text="Preveri rezervacije">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: whitesmoke;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="Preiščite med različnimi možnostmi!">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#switchToHotelListScene" text="Preglej hotele">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: whitesmoke;" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Razvajajte se v toplinah in mrzlinah">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#printUser" text="Preglej ponudbe">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: whitesmoke;">
+                     <children>
+                        <Label text="Drava hoteli">
+                           <font>
+                              <Font size="42.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="V najlepših slovenskih krajih">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Vsak dan je dober dan. Užijte ga v Drava hotelih!">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

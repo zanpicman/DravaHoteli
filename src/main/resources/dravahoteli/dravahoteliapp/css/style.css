@@ -1,0 +1,30 @@
+.infoButton {
+    -fx-background-color: #138496;
+}
+
+.infoButton:pressed {
+    -fx-background-color: #27549c;
+}
+
+.m5 {
+    -fx-padding: 10px;
+    -fx-font-size: 16px;
+}
+
+.flagged {
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+}
+
+.loginInput {
+    -fx-background-color: transparent;
+    -fx-border-color:  #55505c;
+    -fx-border-width:  0px 0px 2px 0px
+}
+
+.loginFlagged {
+    -fx-background-color: transparent;
+    -fx-border-color: red;
+    -fx-border-width:  0px 0px 2px 0px
+
+}
